@@ -1,5 +1,10 @@
 import 'package:flutter/material.dart';
 
+import 'screens/dashboard_screen.dart';
+import 'screens/scan_meal_screen.dart';
+import 'screens/recipes_screen.dart';
+import 'screens/profile_screen.dart';
+
 void main() {
   runApp(const FitAIApp());
 }
@@ -61,41 +66,5 @@ class _MainNavigationState extends State<MainNavigation> {
         ],
       ),
     );
-  }
-}
-
-class DashboardScreen extends StatelessWidget {
-  const DashboardScreen({super.key});
-
-  @override
-  Widget build(BuildContext context) {
-    return const Center(child: Text("Dashboard - fitAI"));
-  }
-}
-
-class ScanMealScreen extends StatelessWidget {
-  const ScanMealScreen({super.key});
-
-  @override
-  Widget build(BuildContext context) {
-    return const Center(child: Text("Scan Meal - Camera & AI"));
-  }
-}
-
-class RecipesScreen extends StatelessWidget {
-  const RecipesScreen({super.key});
-
-  @override
-  Widget build(BuildContext context) {
-    return const Center(child: Text("Recipes - Free & Premium"));
-  }
-}
-
-class ProfileScreen extends StatelessWidget {
-  const ProfileScreen({super.key});
-
-  @override
-  Widget build(BuildContext context) {
-    return const Center(child: Text("Profile & Progress"));
   }
 }
